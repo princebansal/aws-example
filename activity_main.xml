@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dell.babymonitor.MainActivity"
+    android:background="#FF80AB">
+    <EditText
+        android:id = "@+id/nap_time"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:hint="Enter the Nap Time of the Baby"
+
+        />
+    <EditText
+        android:id = "@+id/feed_time"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_below="@id/nap_time"
+        android:hint="Enter the Feeding Time of the Baby"
+        />
+
+    <Button
+        android:id = "@+id/button1"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:onClick = "Submit"
+        android:layout_marginRight="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/feed_time"
+        android:layout_alignRight="@+id/nap_time"
+        android:layout_alignEnd="@+id/nap_time" />
+
+
+</RelativeLayout>
